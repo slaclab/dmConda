@@ -22,6 +22,18 @@ To later install the built artifact into your environment, `conda activate` your
 conda install -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_socket_util
 ```
  
+### Creating new conda environments
+New conda environments are created as `psrel`. To create a new conda environment `newEnv`, 
+```
+ssh psrel@pslogin
+source /reg/g/psdm/sw/dmconda/etc/profile.d/conda.sh
+conda create -n newEnv python=3.6 
+conda activate newEnv
+```
+New packages can be installed in this environment using `conda install`, `pip install` or `npm install`.
+The current list of packages in a standard PCDS DM environment is maintained in the script `installStdPackages.sh`.
+So, to build a environment with the latest versions of dependent packages, run `./installStdPackages.sh` after activating the new enviroment.
+
 
 
 

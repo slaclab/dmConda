@@ -10,6 +10,8 @@ conda install -c conda-forge eventlet
 conda install pymysql
 conda install -c conda-forge kafka-python
 
+conda install -c conda-forge cachetools
+
 # PyMongo is not yet present in conda
 pip install pymongo
 

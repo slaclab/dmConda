@@ -30,6 +30,22 @@ conda install -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_socket_util
 conda install -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_authzn
 
 
+# Install Javascript packages using npm
+npm install --global  jquery
+npm install --global  jquery.noty.packaged.js
+npm install --global  lodash
+npm install --global  moment
+npm install --global  mustache
+npm install --global  socket.io
+npm install --global  socket.io-client
+
+npm install --global  plotly.js
+
+npm install --global  bootstrap@3.3.7
+npm install --global  eonasdan-bootstrap-datetimepicker@4.17.47
+
+
+
 
 
 

@@ -1,33 +1,37 @@
-#!/bin/bash
+#!/bin/bash -x
+
+# Note simply executing this in a conda environment will not work; as the /bin/bash above will place this script outside the context of a conda environment.
+# Sourcing this script after activating the conda environment seems to work
+
 
 # Install some basic python libraries
-conda install -c conda-forge requests
-conda install flask
-conda install -c conda-forge flask-socketio
-conda install -c conda-forge gunicorn 
-conda install -c conda-forge eventlet
+conda install -y -c conda-forge requests
+conda install -y flask
+conda install -y -c conda-forge flask-socketio
+conda install -y -c conda-forge gunicorn 
+conda install -y -c conda-forge eventlet
 
-conda install pymysql
-conda install -c conda-forge kafka-python
+conda install -y pymysql
+conda install -y -c conda-forge kafka-python
 
-conda install -c conda-forge cachetools
+conda install -y -c conda-forge cachetools
 
 # PyMongo is not yet present in conda
-pip install pymongo
+pip install  pymongo
 
 # Use node for Javascript libraries
-conda install -c conda-forge nodejs
+conda install -y -c conda-forge nodejs
 
 
 # Libraries to talk to the various web services/questionnaire
-conda install -c pcds-tag krtc
-conda install -c pcds-tag psdm_qs_cli
+conda install -y -c pcds-tag krtc
+conda install -y -c pcds-tag psdm_qs_cli
 
 
 # Home grown packages from the DM conda channel.
-conda install -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_mysql_util
-conda install -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_socket_util
-conda install -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_authzn
+conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_mysql_util
+conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_socket_util
+conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_authzn
 
 
 # Install Javascript packages using npm

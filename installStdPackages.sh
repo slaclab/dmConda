@@ -48,6 +48,7 @@ npm install --global  plotly.js
 
 npm install --global  bootstrap@3.3.7
 npm install --global  eonasdan-bootstrap-datetimepicker@4.17.47
+npm install --global  font-awesome
 npm install --global  summernote
 
 

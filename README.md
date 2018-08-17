@@ -32,7 +32,7 @@ conda activate newEnv
 ```
 New packages can be installed in this environment using `conda install`, `pip install` or `npm install`.
 The current list of packages in a standard PCDS DM environment is maintained in the script `installStdPackages.sh`.
-So, to build a environment with the latest versions of dependent packages, run `./installStdPackages.sh` after activating the new enviroment.
+So, to build a environment with the latest versions of dependent packages, run `source ./installStdPackages.sh` after activating the new enviroment.
 
 
 

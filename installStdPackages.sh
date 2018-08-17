@@ -16,6 +16,7 @@ conda install -y -c conda-forge kafka-python
 
 conda install -y -c conda-forge cachetools
 conda install -y -c conda-forge apscheduler
+conda install -y -c conda-forge icalendar
 
 # PyMongo is not yet present in conda
 pip install  pymongo

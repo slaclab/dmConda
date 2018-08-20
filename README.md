@@ -27,7 +27,7 @@ New conda environments are created as `psrel`. To create a new conda environment
 ```
 ssh psrel@pslogin
 source /reg/g/psdm/sw/dmconda/etc/profile.d/conda.sh
-conda create -n newEnv python=3.6 
+conda create -n newEnv python=3.7 
 conda activate newEnv
 ```
 New packages can be installed in this environment using `conda install`, `pip install` or `npm install`.

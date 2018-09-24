@@ -23,6 +23,7 @@ pip install  pymongo
 
 # Use node for Javascript libraries
 conda install -y -c conda-forge nodejs
+npm install -g npm
 
 
 # Libraries to talk to the various web services/questionnaire

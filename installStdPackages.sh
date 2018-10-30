@@ -39,7 +39,7 @@ conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_authzn
 
 # Install Javascript packages using npm
 npm install --global  jquery
-npm install --global  jquery.noty.packaged.js
+npm install --global  noty
 npm install --global  lodash
 npm install --global  moment
 npm install --global  mustache

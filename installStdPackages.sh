@@ -19,7 +19,7 @@ conda install -y -c conda-forge apscheduler
 conda install -y -c conda-forge icalendar
 
 # PyMongo is not yet present in conda
-pip install  pymongo
+conda install -y -c anaconda pymongo
 
 # Use node for Javascript libraries
 conda install -y -c conda-forge nodejs
@@ -42,15 +42,18 @@ npm install --global  jquery
 npm install --global  noty
 npm install --global  lodash
 npm install --global  moment
+npm install --global  moment-timezone
 npm install --global  mustache
 npm install --global  socket.io
 npm install --global  socket.io-client
 
 npm install --global  plotly.js
 
-npm install --global  bootstrap@3.3.7
-npm install --global  eonasdan-bootstrap-datetimepicker@4.17.47
-npm install --global  font-awesome
+npm install --global  bootstrap
+npm install --global  tempusdominus-core
+npm install --global  tempusdominus-bootstrap-4
+npm install --global  popper.js
+npm install --global  @fortawesome/fontawesome-free
 npm install --global  summernote
 npm install --global  selectize
 

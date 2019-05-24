@@ -17,6 +17,7 @@ conda install -y -c conda-forge kafka-python
 conda install -y -c conda-forge cachetools
 conda install -y -c conda-forge apscheduler
 conda install -y -c conda-forge icalendar
+conda install -y -c anaconda openpyxl 
 
 # PyMongo is not yet present in conda
 conda install -y -c anaconda pymongo

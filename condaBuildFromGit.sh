@@ -45,7 +45,7 @@ export FULL_PATH_TO_RECIPE=`pwd`/${PACKAGENAME}/recipe
 [ -d "${FULL_PATH_TO_RECIPE}" ] || die "Missing recipe in package ${FULL_PATH_TO_RECIPE}"
 
 conda build \
-    --py 3.6 \
+    --py 3.7 \
     --no-anaconda-upload \
     --skip-existing \
     --no-locking \

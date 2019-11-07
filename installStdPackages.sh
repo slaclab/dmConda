@@ -6,18 +6,21 @@
 
 # Install some basic python libraries
 conda install -y -c conda-forge requests
-conda install -y flask
+conda install -y -c conda-forge flask gunicorn eventlet
 conda install -y -c conda-forge flask-socketio
-conda install -y -c conda-forge gunicorn 
-conda install -y -c conda-forge eventlet
 
 conda install -y pymysql
 conda install -y -c conda-forge kafka-python
 
-conda install -y -c conda-forge cachetools
-conda install -y -c conda-forge apscheduler
-conda install -y -c conda-forge icalendar
-conda install -y -c anaconda openpyxl 
+conda install -y -c conda-forge cachetools apscheduler icalendar openpyxl 
+
+# Libraries to talk to the various web services/questionnaire
+conda install -y -c pcds-tag krtc psdm_qs_cli
+
+
+# Home grown packages from the DM conda channel.
+# conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_mysql_util
+conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_socket_util flask_authzn
 
 # PyMongo is not yet present in conda
 conda install -y -c anaconda pymongo
@@ -26,16 +29,6 @@ conda install -y -c anaconda pymongo
 conda install -y -c conda-forge nodejs
 npm install -g npm
 
-
-# Libraries to talk to the various web services/questionnaire
-conda install -y -c pcds-tag krtc
-conda install -y -c pcds-tag psdm_qs_cli
-
-
-# Home grown packages from the DM conda channel.
-conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_mysql_util
-conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_socket_util
-conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_authzn
 
 
 # Install Javascript packages using npm

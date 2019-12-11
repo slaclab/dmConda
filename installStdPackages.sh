@@ -15,7 +15,8 @@ conda install -y -c conda-forge kafka-python
 conda install -y -c conda-forge cachetools apscheduler icalendar openpyxl 
 
 # Libraries to talk to the various web services/questionnaire
-conda install -y -c pcds-tag krtc psdm_qs_cli
+#conda install -y -c pcds-tag krtc psdm_qs_cli
+conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 krtc psdm_qs_cli
 
 
 # Home grown packages from the DM conda channel.

@@ -5,31 +5,24 @@
 
 
 # Install some basic python libraries
-conda install -y -c conda-forge requests
-conda install -y -c conda-forge flask gunicorn eventlet
-conda install -y -c conda-forge flask-socketio
+conda install -y -c anaconda -c conda-forge flask gunicorn eventlet flask-socketio pymongo kafka-python requests cachetools apscheduler
+conda install -y -c conda-forge icalendar openpyxl
 
-conda install -y pymysql
-conda install -y -c conda-forge kafka-python
-
-conda install -y -c conda-forge cachetools apscheduler icalendar openpyxl 
+# As of Jan 2020, this forces a downgrade of python; so we skip updating the dependencies for this.
+conda install -y -c conda-forge --no-update-dependencies pymysql 
 
 # Libraries to talk to the various web services/questionnaire
+# Use the control conda environment for this...
 #conda install -y -c pcds-tag krtc psdm_qs_cli
-conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 krtc psdm_qs_cli
-
+#conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 krtc psdm_qs_cli
 
 # Home grown packages from the DM conda channel.
 # conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_mysql_util
 conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_socket_util flask_authzn
 
-# PyMongo is not yet present in conda
-conda install -y -c anaconda pymongo
-
 # Use node for Javascript libraries
 conda install -y -c conda-forge nodejs
 npm install -g npm
-
 
 
 # Install Javascript packages using npm

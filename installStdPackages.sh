@@ -9,7 +9,7 @@ conda install -y -c anaconda -c conda-forge flask gunicorn eventlet flask-socket
 conda install -y -c conda-forge icalendar openpyxl
 
 # As of Jan 2020, this forces a downgrade of python; so we skip updating the dependencies for this.
-conda install -y -c conda-forge --no-update-dependencies pymysql 
+conda install -y -c conda-forge  --freeze-installed pymysql 
 
 # Libraries to talk to the various web services/questionnaire
 # Use the control conda environment for this...
@@ -44,9 +44,4 @@ npm install --global  popper.js
 npm install --global  @fortawesome/fontawesome-free
 npm install --global  summernote
 npm install --global  selectize
-
-
-
-
-
 

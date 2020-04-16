@@ -5,8 +5,8 @@
 
 
 # Install some basic python libraries
-conda install -y -c anaconda -c conda-forge flask gunicorn eventlet flask-socketio pymongo kafka-python requests cachetools apscheduler
-conda install -y -c conda-forge icalendar openpyxl
+conda install -y -c anaconda -c conda-forge --freeze-installed flask gunicorn eventlet flask-socketio pymongo kafka-python requests cachetools apscheduler
+conda install -y -c conda-forge --freeze-installed icalendar openpyxl
 
 # As of Jan 2020, this forces a downgrade of python; so we skip updating the dependencies for this.
 conda install -y -c conda-forge  --freeze-installed pymysql 
@@ -17,12 +17,9 @@ conda install -y -c conda-forge  --freeze-installed pymysql
 #conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 krtc psdm_qs_cli
 
 # Home grown packages from the DM conda channel.
-# conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_mysql_util
-conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_socket_util flask_authzn
-
 # Picked up typed_json for the config_db service
-conda install --freeze-installed numpy 
-conda install --freeze-installed -c /reg/g/psdm/sw/dmconda/channels/rhel7 typed_json 
+conda install -y --freeze-installed --freeze-installed numpy 
+conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 --freeze-installed flask_socket_util flask_authzn typed_json
 
 # Use node for Javascript libraries
 conda install -y -c conda-forge nodejs

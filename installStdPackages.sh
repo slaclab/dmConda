@@ -20,6 +20,10 @@ conda install -y -c conda-forge  --freeze-installed pymysql
 # conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_mysql_util
 conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_socket_util flask_authzn
 
+# Picked up typed_json for the config_db service
+conda install --freeze-installed numpy 
+conda install --freeze-installed -c /reg/g/psdm/sw/dmconda/channels/rhel7 typed_json 
+
 # Use node for Javascript libraries
 conda install -y -c conda-forge nodejs
 npm install -g npm

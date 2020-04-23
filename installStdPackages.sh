@@ -6,7 +6,7 @@
 
 # Install some basic python libraries
 conda install -y -c anaconda -c conda-forge --freeze-installed flask gunicorn eventlet flask-socketio pymongo kafka-python requests cachetools apscheduler
-conda install -y -c conda-forge --freeze-installed icalendar openpyxl
+conda install -y -c conda-forge --freeze-installed icalendar openpyxl python-docx 
 
 # As of Jan 2020, this forces a downgrade of python; so we skip updating the dependencies for this.
 conda install -y -c conda-forge  --freeze-installed pymysql 

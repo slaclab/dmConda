@@ -2,7 +2,7 @@
 This repo contains scripts and information for building packages, creating and managing conda environments for PCDS Data Management.
 To use the PCDS DM conda, 
 ```
-source /reg/g/psdm/sw/dmconda/etc/profile.d/conda.sh
+source /reg/g/psdm/sw/dm/conda/etc/profile.d/conda.sh
 ```
 and then use `conda activate <env>` to activate the named environment.
 A list of conda envs can be obtained using `conda info --envs`.
@@ -26,8 +26,8 @@ conda install -c /reg/g/psdm/sw/dmconda/channels/rhel7 flask_socket_util
 New conda environments are created as `psrel`. To create a new conda environment `newEnv`, 
 ```
 ssh psrel@pslogin
-source /reg/g/psdm/sw/dmconda/etc/profile.d/conda.sh
-conda create -n newEnv python=3.7 
+source /reg/g/psdm/sw/dm/conda/etc/profile.d/conda.sh
+conda create -n newEnv python=3 
 conda activate newEnv
 ```
 New packages can be installed in this environment using `conda install`, `pip install` or `npm install`.

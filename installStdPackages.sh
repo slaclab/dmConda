@@ -6,7 +6,7 @@
 
 # Install some basic python libraries
 conda install -y -c anaconda -c conda-forge --freeze-installed flask gunicorn eventlet flask-socketio pymongo kafka-python requests cachetools apscheduler sqlitedict
-conda install -y -c conda-forge --freeze-installed icalendar openpyxl python-docx google-api-python-client google-auth-httplib2 google-auth-oauthlib
+conda install -y -c conda-forge --freeze-installed icalendar openpyxl python-docx reportlab google-api-python-client google-auth-httplib2 google-auth-oauthlib
 
 # As of Jan 2020, this forces a downgrade of python; so we skip updating the dependencies for this.
 conda install -y -c conda-forge  --freeze-installed pymysql 
@@ -45,4 +45,6 @@ npm install --global  popper.js
 npm install --global  @fortawesome/fontawesome-free
 npm install --global  summernote
 npm install --global  selectize
+
+npm install --global express http-proxy-middleware client-certificate-auth
 

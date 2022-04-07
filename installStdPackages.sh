@@ -8,15 +8,6 @@
 conda install -y -c anaconda -c conda-forge --freeze-installed flask gunicorn eventlet flask-socketio pymongo kafka-python requests cachetools apscheduler sqlitedict
 conda install -y -c conda-forge --freeze-installed icalendar openpyxl python-docx reportlab google-api-python-client google-auth-httplib2 google-auth-oauthlib authlib
 
-# As of Jan 2020, this forces a downgrade of python; so we skip updating the dependencies for this.
-conda install -y -c conda-forge  --freeze-installed pymysql 
-
-# Libraries to talk to the various web services/questionnaire
-# Use the control conda environment for this...
-#conda install -y -c pcds-tag krtc psdm_qs_cli
-#conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 krtc psdm_qs_cli
-
-# Home grown packages from the DM conda channel.
 # Picked up typed_json for the config_db service
 conda install -y --freeze-installed --freeze-installed numpy 
 conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 --freeze-installed typed_json
@@ -46,5 +37,5 @@ npm install --global  @fortawesome/fontawesome-free
 npm install --global  summernote
 npm install --global  selectize
 
-npm install --global express http-proxy-middleware client-certificate-auth jsonwebtoken
+npm install --global express http-proxy-middleware client-certificate-auth jsonwebtoken http-proxy
 

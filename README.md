@@ -43,7 +43,7 @@ For example,
 ```
 conda create --prefix=/reg/g/psdm/sw/dm/conda/envs/ws_lgbkbs5_Feb2024  python=3.11
 conda activate /reg/g/psdm/sw/dm/conda/envs/ws_lgbkbs5_Feb2024
-cd /reg/g/psdm/sw/dm/conda/envs/ws_lgbkbs5_Feb2024
+cd /cds/group/psdm/sw/dm/conda/envs/ws_lgbkbs5_Feb2024
 # Copy requirements.txt from application now
 pip3 install -r requirements.txt
 conda install -c conda-forge nodejs

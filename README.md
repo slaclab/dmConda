@@ -41,6 +41,7 @@ package specifications using requirements.txt and package.json and conda simply 
 One can maybe create an environment using conda and then install inside this environment using pip3 and npm
 For example,
 ```
+source /reg/g/psdm/sw/dm/conda/etc/profile.d/conda.sh
 conda create --prefix=/cds/group/psdm/sw/dm/conda/envs/ws_lgbkbs5_Feb2024  python=3.11
 conda activate /cds/group/psdm/sw/dm/conda/envs/ws_lgbkbs5_Feb2024
 cd /cds/group/psdm/sw/dm/conda/envs/ws_lgbkbs5_Feb2024

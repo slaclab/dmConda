@@ -34,6 +34,23 @@ New packages can be installed in this environment using `conda install`, `pip in
 The current list of packages in a standard PCDS DM environment is maintained in the script `installStdPackages.sh`.
 So, to build a environment with the latest versions of dependent packages, run `source ./installStdPackages.sh` after activating the new enviroment.
 
+# App specific way to do this. 
+Attempt to move away from conda for the environments for the web services.
+The reason is that most deployments outside of PCDS ( including Cryo, k8s) prefer
+package specifications using requirements.txt and package.json and conda simply gets in the way.
+One can maybe create an environment using conda and then install inside this environment using pip3 and npm
+For example,
+```
+conda create --prefix=/reg/g/psdm/sw/dm/conda/envs/ws_lgbkbs5_Feb2024  python=3.11
+conda activate /reg/g/psdm/sw/dm/conda/envs/ws_lgbkbs5_Feb2024
+cd /reg/g/psdm/sw/dm/conda/envs/ws_lgbkbs5_Feb2024
+# Copy requirements.txt from application now
+pip3 install -r requirements.txt
+conda install -c conda-forge nodejs
+cd lib
+# Copy package.json from application now
+npm install
+```
 
 
 

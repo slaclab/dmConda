@@ -10,7 +10,7 @@ conda install -y -c conda-forge --freeze-installed icalendar openpyxl python-doc
 
 # Picked up typed_json for the config_db service
 conda install -y --freeze-installed --freeze-installed numpy 
-conda install -y -c /reg/g/psdm/sw/dmconda/channels/rhel7 --freeze-installed typed_json
+conda install -y -c /cds/group/psdm/sw/dmconda/channels/rhel7 --freeze-installed typed_json
 
 # Use node for Javascript libraries
 conda install -y -c conda-forge nodejs
